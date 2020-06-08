@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://struts.apache.org/tags-bean" prefix="bean"%>
+<%@ taglib uri="/tags/temperature-converter" prefix="temp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -10,6 +11,11 @@
 <body>
 	<h1>
 		<bean:write name="helloForm" property="hello" />
+		<temp:convert to="Fahrenheit">100</temp:convert>
+		<temp:convert to="F">100</temp:convert>
+		<temp:convert>100</temp:convert>
+		<temp:convert to="Kelvin">100</temp:convert>
+		<temp:convert to="K">100</temp:convert>
 	</h1>
 </body>
 </html>
