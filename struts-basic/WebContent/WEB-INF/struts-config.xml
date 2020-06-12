@@ -7,10 +7,18 @@
 <struts-config>
 	<form-beans>
 		<form-bean name="helloForm"	type="br.com.igorgsousa.model.form.HelloWorldForm" />
+		<form-bean name="contactForm"	type="br.com.igorgsousa.model.form.ContactForm" />
 	</form-beans>
 	<action-mappings>
 		<action name="helloForm" path="/HelloWorld" type="br.com.igorgsousa.controller.HelloWorldController" scope="request">
 			<forward name="hello" path="/hello.jsp" />
 		</action>
+		<action name="contactForm" path="/contact" type="br.com.igorgsousa.controller.ContactController" scope="request"
+				validate="true" input="/contact.jsp" >
+			<forward name="contact" path="/contact.jsp" />	
+			<forward name="success" path="/contact-success.jsp" />
+			<forward name="failure" path="/contact.jsp" />
+		</action>
 	</action-mappings>
+	<message-resources parameter="messages"/>
 </struts-config>
