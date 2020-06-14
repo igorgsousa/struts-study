@@ -21,4 +21,6 @@
 		</action>
 	</action-mappings>
 	<message-resources parameter="messages"/>
+	
+	<plug-in className="br.com.igorgsousa.config.plugins.HibernatePlugin"/>
 </struts-config>

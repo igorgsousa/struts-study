@@ -25,10 +25,33 @@
 	    <version>4.0.1</version>
 	    <scope>provided</scope>
 	</dependency>
+	<dependency>
+	   <groupId>org.hibernate</groupId>
+	   <artifactId>hibernate-core</artifactId>
+	   <version>4.3.10.Final</version>
+	</dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>4.3.10.Final</version>
+    </dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<scope>runtime</scope>
+		<version>8.0.20</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+	<dependency>
+	    <groupId>org.slf4j</groupId>
+	    <artifactId>slf4j-api</artifactId>
+	    <version>1.7.30</version>
+	</dependency>
+	
 	
   </dependencies>
   <build>
-    <sourceDirectory>src</sourceDirectory>
+    <sourceDirectory>src/main/java</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
