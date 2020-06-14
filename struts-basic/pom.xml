@@ -47,6 +47,13 @@
 	    <artifactId>slf4j-api</artifactId>
 	    <version>1.7.30</version>
 	</dependency>
+	<!-- https://mvnrepository.com/artifact/antlr/antlr -->
+	<dependency>
+	    <groupId>antlr</groupId>
+	    <artifactId>antlr</artifactId>
+	    <version>2.7.6</version>
+	</dependency>
+	
 	
 	
   </dependencies>
