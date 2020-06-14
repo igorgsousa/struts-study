@@ -5,6 +5,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Sucesso</title>
+<link href="${pageContext.request.contextPath}/public/css/app.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	Cadastrado com sucesso

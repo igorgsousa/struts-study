@@ -1,0 +1,25 @@
+@charset "ISO-8859-1";
+
+body{
+	padding: 10px;
+	background-color: #2f2f33;
+	color : white;
+}
+
+.fieldset{
+	padding:10px;
+}
+
+.form-error{
+	color : #fd6565;
+	padding: 5px 0px;
+	font-size: small;
+}
+
+.submit-btn{
+	background-color: #3d8940;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 2px;
+}

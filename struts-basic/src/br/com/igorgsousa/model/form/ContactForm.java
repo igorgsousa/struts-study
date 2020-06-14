@@ -12,7 +12,7 @@ import br.com.igorgsousa.model.entity.Contact;
 public class ContactForm extends ActionForm {
 
 	private static final long serialVersionUID = -600033564873824653L;
-	private Contact contact;
+	private Contact contact = new Contact();
 
 	public ContactForm() {
 		super();
@@ -28,7 +28,6 @@ public class ContactForm extends ActionForm {
 	
 	@Override
 	public void reset(ActionMapping mapping, HttpServletRequest request) {
-		this.contact = new Contact();
 	}
 	
 	@Override
@@ -42,7 +41,7 @@ public class ContactForm extends ActionForm {
 			}
 
 			if(this.getContact().getDesignation() == null || this.getContact().getDesignation().isEmpty()) {
-				errors.add("contact.name", new ActionMessage("form.validate.contact.name.required"));
+				errors.add("contact.designation", new ActionMessage("form.validate.contact.designation.required"));
 			}
 		}
 		

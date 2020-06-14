@@ -7,22 +7,24 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Formulario de contato</title>
+<link href="${pageContext.request.contextPath}/public/css/app.css" rel="stylesheet" type="text/css">
+
 </head>
 <body>
-	<form action="contact.do" method="post">
-	 	<div>
-		 	Nome : <input type="text" name="contact.name"/>
-		 	<div>
+	<html:form action="contact.do" method="post">
+	 	<div class="fieldset">
+		 	Nome : <html:text property="contact.name"/>
+		 	<div class="form-error">
 		 		<html:errors property="contact.name"/>
 		 	</div>
 	 	</div>
-	 	<div>
-	        Designacão : <input type="text" name="contact.designation" />
-	        <div>
+	 	<div class="fieldset">
+	        Designacão : <html:text property="contact.designation"/>
+	       <div class="form-error">
 		 		<html:errors property="contact.designation"/>
 		 	</div>
 	 	</div>
-        <input type="submit" value="Enviar" />
-	</form>
+        <input class="submit-btn" type="submit" value="Enviar" />
+	</html:form>
 </body>
 </html>
