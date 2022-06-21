@@ -39,7 +39,7 @@
 		<groupId>mysql</groupId>
 		<artifactId>mysql-connector-java</artifactId>
 		<scope>runtime</scope>
-		<version>8.0.20</version>
+		<version>8.0.28</version>
 	</dependency>
 	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
 	<dependency>
